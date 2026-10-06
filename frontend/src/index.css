@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+.vhs-glow-purple { text-shadow: 0 0 10px rgba(157, 78, 221, 0.6), 0 0 20px rgba(157, 78, 221, 0.4); }
+.vhs-glow-gold { text-shadow: 0 0 10px rgba(255, 215, 0, 0.6), 0 0 20px rgba(255, 215, 0, 0.4); }
+
+/* Smooth ambient breathing glow instead of jagged flickering */
+@keyframes ambient-glow {
+  0%, 100% { box-shadow: 4px 0 15px rgba(157, 78, 221, 0.05); }
+  50% { box-shadow: 4px 0 25px rgba(157, 78, 221, 0.15); }
+}
+.ambient-container {
+  animation: ambient-glow 6s ease-in-out infinite;
+}
+
+/* Elegant fade-in slide for new list elements */
+@keyframes fade-slide-up {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fade-slide-up 0.4s ease-out forwards;
+}

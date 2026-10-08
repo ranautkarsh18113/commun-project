@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "type": "module",
   "dependencies": {
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0"
     "@tailwindcss/vite": "^4.3.3"
   },
   "optionalDependencies": {

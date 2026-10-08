@@ -73,6 +73,7 @@ router.get('/me', protectRoute, async (req, res) => {
         if (!user) return res.status(404).json({ message: "User not found" });
         res.json({ _id: user._id, username: user.username });
     } catch (error) {
+        console.log("LOGIN ERROR: ", error);
         res.status(500).json({ message: "Server error" });
     }
 });

@@ -1,4 +1,7 @@
 {
+  "name": "frontend",
+  "version": "1.0.0",
+  "type": "module",
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3"
   },
